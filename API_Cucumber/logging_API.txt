@@ -1,0 +1,115 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "deepak",
+    "phone_number": "454657642343",
+    "address": "Simla",
+    "website": "ApiTes eee t",
+    "language": "KOKO",
+    "location": {
+        "lat": -15.25866,
+        "lng": 145.25866
+    },
+    "types": [
+        "Park",
+        "Shop"
+    ],
+    "accuracy": 50
+}
+HTTP/1.1 200 OK
+Date: Mon, 24 Aug 2020 06:35:58 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "babd7cb7e9cc57f1bb2b6511e2b3ae45",
+    "scope": "APP",
+    "reference": "f4e33885ecbeaf27651f53859f91149ef4e33885ecbeaf27651f53859f91149e",
+    "id": "f4e33885ecbeaf27651f53859f91149e"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=babd7cb7e9cc57f1bb2b6511e2b3ae45
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=babd7cb7e9cc57f1bb2b6511e2b3ae45
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 24 Aug 2020 06:35:59 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 204
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-15.25866",
+        "longitude": "145.25866"
+    },
+    "accuracy": "50",
+    "name": "deepak",
+    "phone_number": "454657642343",
+    "address": "Simla",
+    "types": "Park,Shop",
+    "website": "ApiTes eee t",
+    "language": "KOKO"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "babd7cb7e9cc57f1bb2b6511e2b3ae45"
+}
+HTTP/1.1 200 OK
+Date: Mon, 24 Aug 2020 06:36:01 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
